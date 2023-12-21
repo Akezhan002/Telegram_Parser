@@ -1,0 +1,13 @@
+fastapi==0.104.1
+pyTelegramBotAPI==4.14.0
+uvicorn==0.23.2
+pydantic~=2.4.2
+SQLAlchemy==2.0.22
+sqlalchemy-orm==1.2.10
+psycopg2==2.9.9
+Jinja2==3.1.2
+requests~=2.31.0
+beautifulsoup4~=4.12.2
+redis==5.0.1
+
+telebot~=0.0.5

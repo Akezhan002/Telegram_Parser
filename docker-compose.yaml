@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  fastapi-1:
+    container_name: app-1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8001:80"
+
+  postgres:
+      image: postgres:13
+      container_name: postgres-eaisto
+      restart: always
+      ports:
+        - "54332:5432"
+      environment:
+        - POSTGRES_DB=app
+        - POSTGRES_USER=user
+        - POSTGRES_PASSWORD=root
+      volumes:
+        - ./postgres/datadir:/var/lib/postgresql/data
